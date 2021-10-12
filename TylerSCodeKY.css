@@ -4,44 +4,111 @@
     box-sizing: border-box;
 }
 
-.login{
+body {
+    color: #333;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.5;
+    background: url('IMG_2017.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1{
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+img{ 
+    width: 100%;
+}
+
+.navbar{
+    background-color: whitesmoke;
+    color: #333;
+    height: 60px;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar ul{
     display: flex;
+}
+
+.navbar a{
+    color: #333;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px #333 solid;
+}
+.container{
+    margin: 0 auto;
+    overflow: auto;
+    margin: 0 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login{
     height: 500px;
     width: 800px;
+    border-radius: 15px;
     border: 1px solid black;
+    background-color: whitesmoke;
     margin: auto;
     margin-top: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .4)
 }
+
 
 .form{
     display: flex;
     flex-direction: column;
     width: 50%;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: transparent;
 }
 
 .form h1{
     font-size: 18px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 40px;
-    
+    color: #333;
 }
 
 .box{
     padding: 12px;
     width: 65%;
     margin: 15px;
-    border: 1px solid black;
+    border: 1px solid #333;
     outline: none;
     border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .4)
 }
 
 #submit{
     padding: 12px 30px;
     width: 40%;
-    margin-top: 40px;
-    background-color: black;
+    margin-top: 30px;
+    background-color: #333;
     color: whitesmoke;
     font-weight: bold;
     border: none;
@@ -62,4 +129,8 @@
 .form a:hover{
     cursor: pointer;
     color: darkred;
+}
+
+.form p{
+    color: #333;
 }
