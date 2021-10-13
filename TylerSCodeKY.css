@@ -8,24 +8,13 @@ body {
     color: #333;
     font-family: Verdana, Geneva, sans-serif;
     line-height: 1.5;
-    background: url('IMG_2017.jpg');
+    background: url('Background1.png');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100% 100%;
 }
 
-ul{
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-h1{
-    font-weight: 300;
-    line-height: 1.2;
-    margin: 10px 0;
+html{
+    height: 100%;
 }
 
 img{ 
@@ -33,39 +22,98 @@ img{
 }
 
 .navbar{
-    background-color: whitesmoke;
-    color: #333;
-    height: 60px;
-}
-
-.navbar .flex{
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: whitesmoke;
+    height: 100%;
 }
 
-.navbar ul{
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 
-.navbar a{
-    color: #333;
+.navbar-links li{
+    list-style: none;
+}
+
+
+.navbar-links a{
+    color: whitesmoke;
     padding: 10px;
     margin: 0 5px;
+    text-decoration: none;
+    
+    
 }
 
-.navbar a:hover{
-    border-bottom: 2px #333 solid;
-}
-.container{
-    margin: 0 auto;
-    overflow: auto;
-    margin: 0 5px;
+.navbar-links a:hover{
+    border-bottom: 2px whitesmoke solid;
 }
 
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 2px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+.site-title{
+    font-size: 30px;
+    font-family: Verdana, Geneva, sans-serif;;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px;
+
 }
 
 .login{
@@ -83,9 +131,9 @@ img{
 .form{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     align-items: center;
-    background-color: transparent;
+    background-color: whitesmoke;
 }
 
 .form h1{
@@ -96,7 +144,7 @@ img{
 
 .box{
     padding: 12px;
-    width: 65%;
+    width: 35%;
     margin: 15px;
     border: 1px solid #333;
     outline: none;
@@ -106,7 +154,7 @@ img{
 
 #submit{
     padding: 12px 30px;
-    width: 40%;
+    width: 25%;
     margin-top: 30px;
     background-color: #333;
     color: whitesmoke;
@@ -117,7 +165,7 @@ img{
 
 #submit:hover{
     cursor: pointer;
-    background-color: darkred;
+    background-color: blue;
 }
 
 .form a{
@@ -128,7 +176,7 @@ img{
 
 .form a:hover{
     cursor: pointer;
-    color: darkred;
+    color: blue;
 }
 
 .form p{
