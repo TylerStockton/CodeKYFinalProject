@@ -130,7 +130,7 @@ img{
 }
 
 
-.form{
+form{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -139,13 +139,13 @@ img{
     
 }
 
-.form h1{
+.login h1{
     font-size: 18px;
     margin: 40px;
     color: #333;
 }
 
-.box{
+input {
     padding: 12px;
     width: 35%;
     margin: 15px;
@@ -172,17 +172,17 @@ img{
     background-color: blue;
 }
 
-.form a{
+.login a{
     text-decoration: none;
     color: black;
     margin-top: 10px;
 }
 
-.form a:hover{
+.login a:hover{
     cursor: pointer;
     color: blue;
 }
 
-.form p{
+.login p{
     color: #333;
 }
