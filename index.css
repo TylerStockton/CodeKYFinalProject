@@ -121,7 +121,7 @@ img{
 .login{
     height: 500px;
     width: 800px;
-    border-radius: 15px;
+    border-radius: 20px;
     border: 1px solid black;
     background-color: whitesmoke;
     margin: auto;
@@ -136,6 +136,7 @@ img{
     width: 100%;
     align-items: center;
     background-color: whitesmoke;
+    
 }
 
 .form h1{
@@ -163,6 +164,7 @@ img{
     font-weight: bold;
     border: none;
     outline: none;
+    border-radius: 20px;
 }
 
 #submit:hover{
@@ -173,7 +175,7 @@ img{
 .form a{
     text-decoration: none;
     color: black;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .form a:hover{

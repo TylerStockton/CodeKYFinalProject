@@ -11,6 +11,7 @@ body {
     background: url('Aboutbkgd.png');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 html{
@@ -117,3 +118,77 @@ img{
     color: whitesmoke;
     cursor: pointer;
 }
+
+.grid{
+    display: grid;
+    grid-template-areas: "body" "footer";
+    grid-gap: 15px;
+    height: 100vh;
+}
+
+.box1{
+    grid-area: "body";
+    grid-column: 1/4;
+    grid-row: 1/4;
+    background-color: rgba(255, 255, 255, 0.45);
+    color: black;
+    text-align: center;
+
+}
+
+.box2{
+    grid-area: "footer";
+    grid-column: 1/2;
+    grid-row: 4/4;
+    background-color: rgba(255, 255, 255, 0.45);
+    text-align: center;
+    color:black;
+    
+}
+
+.box2 h3{
+    margin-top: 10px;
+}
+
+.fa-chart-gantt{
+    color: black;
+    margin-top: 5px;
+}
+
+.box3{
+    grid-area: "footer";
+    grid-column: 2/3;
+    grid-row: 4/4;
+    background-color: rgba(255, 255, 255, 0.45);
+    text-align: center;
+    color: black;
+    
+}
+
+.box3 h3{
+    margin-top: 10px;
+}
+
+.fa-hand-holding-dollar{
+    color: black;
+    margin-top: 5px;
+}
+
+.box4{
+    grid-area: "footer";
+    grid-column: 3/4;
+    grid-row: 4/4;
+    background-color: rgba(255, 255, 255, 0.45);
+    text-align: center;
+    color: black;
+}
+
+.box4 h3{
+    margin-top: 10px;
+}
+
+.fa-toolbox{
+    color: black;
+    margin-top: 5px;
+}
+
